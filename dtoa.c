@@ -1,3 +1,7 @@
+/* The code comes from https://portal.ampl.com/~dmg/netlib/fp/dtoa.c
+ * Go to https://portal.ampl.com/~dmg/netlib/fp/changes for the detailed changes.
+ */
+
 /****************************************************************
  *
  * The author of this software is David M. Gay.
