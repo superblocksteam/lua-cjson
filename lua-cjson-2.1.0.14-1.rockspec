@@ -1,9 +1,9 @@
-package = "lua-cjson"
-version = "2.1.0.14-1"
+package = "superblocks-lua-cjson"
+version = "2.1.0.15-1"
 
 source = {
-    url = "git+https://github.com/openresty/lua-cjson",
-    tag = "2.1.0.14",
+    url = "git+https://github.com/superblocks/lua-cjson",
+    tag = "2.1.0.15",
 }
 
 description = {
