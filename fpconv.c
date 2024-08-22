@@ -160,9 +160,9 @@ static void set_number_format(char *fmt, int precision)
 {
     int d1, d2, i;
 
-    assert(1 <= precision && precision <= 16);
+    assert(1 <= precision && precision <= 17);
 
-    /* Create printf format (%.14g) from precision */
+    /* Create printf format (%.17g) from precision */
     d1 = precision / 10;
     d2 = precision % 10;
     fmt[0] = '%';
