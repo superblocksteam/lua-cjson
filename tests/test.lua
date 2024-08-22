@@ -357,10 +357,14 @@ local cjson_tests = {
       json.encode_number_precision, { 3 }, true, { 3 } },
     { "Encode number with precision 3",
       json.encode, { 1/3 }, true, { "0.333" } },
-    { "Set encode_number_precision(14)",
-      json.encode_number_precision, { 14 }, true, { 14 } },
+    { "Set encode_number_precision(17)",
+      json.encode_number_precision, { 17 }, true, { 17 } },
     { "Set encode_keep_buffer(true)",
       json.encode_keep_buffer, { true }, true, { true } },
+    { "Encode number with precision 17 -- 1",
+      json.encode, { 1.1234567891234567 }, true, { "1.1234567891234567" } },
+    { "Encode number with precision 17 -- 2",
+      json.encode, { 3.141592653589793238462 }, true, { "3.1415926535897932" } },
 
     -- Test config API errors
     -- Function is listed as '?' due to pcall for older versions of Lua
